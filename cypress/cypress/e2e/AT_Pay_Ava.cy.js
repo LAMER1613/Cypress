@@ -1,4 +1,4 @@
-escribe('Тест покупки аватара', function() {
+describe('Тест покупки аватара', function() {
 	it('Проверка корректной покупки фото для тренера покемона', function(){
 		cy.visit('https://pokemonbattle.me/');
 		cy.get(':nth-child(1) > .auth__input').type('AddEmail');
