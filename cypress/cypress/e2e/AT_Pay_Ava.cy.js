@@ -1,4 +1,4 @@
-describe('Тест покупки аватара', function() {
+escribe('Тест покупки аватара', function() {
 	it('Проверка корректной покупки фото для тренера покемона', function(){
 		cy.visit('https://pokemonbattle.me/');
 		cy.get(':nth-child(1) > .auth__input').type('AddEmail');
@@ -18,9 +18,5 @@ describe('Тест покупки аватара', function() {
 		cy.get('.payment__submit-button').click();
 		cy.contains('Покупка прошла успешно').should('be.visible');
 		cy.get('.payment__adv').click();
-
-
-
-	
 	})
 })
